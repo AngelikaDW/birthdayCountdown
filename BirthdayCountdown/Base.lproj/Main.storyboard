@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BirthdayCountdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoeveel dagen ben ik nu oud?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9D-zL-cvu">
+                                <rect key="frame" x="47" y="55" width="281.5" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LmA-th-fIT">
+                                <rect key="frame" x="28" y="101" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="dg6-Td-mDW"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="544439185.919842">
+                                    <!--2018-04-03 09:06:25 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="nl_NL"/>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZAC-bz-3QV">
+                                <rect key="frame" x="118" y="387" width="139.5" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gefeliciteerd!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6E-ve-HUB">
+                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Je bent vandaag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtm-x6-Cvw">
+                                        <rect key="frame" x="0.0" y="35" width="139.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2In-tj-ij9">
+                                <rect key="frame" x="46.5" y="595" width="282" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="0.65536708047945202" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="282" id="4RN-73-HV9"/>
+                                    <constraint firstAttribute="height" constant="42" id="GKC-jk-gPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Waneer ben ik jarig?">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="waneerJarigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7d-Fr-k0M"/>
+                                    <segue destination="cAP-In-8iQ" kind="show" identifier="goToUpcomingBday" id="Qv2-LA-a9I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hva-Lc-pZk">
+                                <rect key="frame" x="137.5" y="269" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YCi-tu-Lvt"/>
+                                    <constraint firstAttribute="height" constant="100" id="nSm-Oq-2A8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aN-Sn-sUj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dagen oud!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-ee-Cw2">
+                                <rect key="frame" x="87.5" y="535" width="200" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="B5Y-qr-Tll"/>
+                                    <constraint firstAttribute="height" constant="30" id="KdB-bW-pQG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-vs-0CI">
+                                <rect key="frame" x="62" y="477" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1kl-eY-vEB"/>
+                                    <constraint firstAttribute="height" constant="40" id="hrx-J5-HVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZAC-bz-3QV" firstAttribute="top" secondItem="hva-Lc-pZk" secondAttribute="bottom" constant="18" id="99T-tX-LA3"/>
+                            <constraint firstItem="Pxx-vs-0CI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9VF-Fc-zH8"/>
+                            <constraint firstItem="S9D-zL-cvu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="55" id="9h1-pg-fKZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2In-tj-ij9" secondAttribute="bottom" constant="30" id="BGP-Fl-bL1"/>
+                            <constraint firstItem="hva-Lc-pZk" firstAttribute="top" secondItem="LmA-th-fIT" secondAttribute="bottom" constant="18" id="GT8-Mk-qiB"/>
+                            <constraint firstItem="S9D-zL-cvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Grf-18-TuM"/>
+                            <constraint firstItem="hva-Lc-pZk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Izq-D8-aXE"/>
+                            <constraint firstItem="ZAC-bz-3QV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JeQ-2f-y8i"/>
+                            <constraint firstItem="LmA-th-fIT" firstAttribute="top" secondItem="S9D-zL-cvu" secondAttribute="bottom" constant="20" id="Mlm-AM-ebE"/>
+                            <constraint firstItem="2In-tj-ij9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UKQ-QG-iP4"/>
+                            <constraint firstItem="LmA-th-fIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UPC-Fw-sQK"/>
+                            <constraint firstItem="aRW-ee-Cw2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y3m-nQ-trh"/>
+                            <constraint firstAttribute="bottom" secondItem="Pxx-vs-0CI" secondAttribute="bottom" constant="150" id="ZMc-ya-Zlp"/>
+                            <constraint firstItem="Pxx-vs-0CI" firstAttribute="top" secondItem="ZAC-bz-3QV" secondAttribute="bottom" constant="20" id="oA5-fc-cX1"/>
+                            <constraint firstItem="aRW-ee-Cw2" firstAttribute="top" secondItem="Pxx-vs-0CI" secondAttribute="bottom" constant="18" id="qZw-g5-Awf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dagenOudLabel" destination="aRW-ee-Cw2" id="vMR-bU-D4Y"/>
+                        <outlet property="datePicker" destination="LmA-th-fIT" id="Sdi-0K-DJ9"/>
+                        <outlet property="daysDiffLabel" destination="Pxx-vs-0CI" id="A8L-hE-d1V"/>
+                        <outlet property="gefeliciteerdLabel" destination="r6E-ve-HUB" id="mng-eK-gLY"/>
+                        <outlet property="jeBentLabel" destination="Dtm-x6-Cvw" id="qiu-Da-Eps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474.39999999999998" y="-73.313343328335833"/>
+        </scene>
+        <!--Upcoming Bday-->
+        <scene sceneID="j2T-jc-tWA">
+            <objects>
+                <viewController id="cAP-In-8iQ" customClass="UpcomingBday" customModule="BirthdayCountdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7YN-Oq-wbf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G6J-kR-ef2">
+                                <rect key="frame" x="62.5" y="123.5" width="250" height="420"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Je bent over " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6R-U2-u21">
+                                        <rect key="frame" x="56.5" y="0.0" width="137" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" placeholder="300" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-z8-sLZ">
+                                        <rect key="frame" x="84" y="46" width="82" height="42"/>
+                                        <color key="textColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dagen weer jarig!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-tp-cyF">
+                                        <rect key="frame" x="36" y="104" width="178" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloons" translatesAutoresizingMaskIntoConstraints="NO" id="tJV-Vd-efk">
+                                        <rect key="frame" x="0.0" y="150" width="250" height="270"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="420" id="VNT-Hg-DMy"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8V-Bc-5Ji">
+                                <rect key="frame" x="20" y="20" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Yts-Fr-DDA"/>
+                                    <constraint firstAttribute="width" constant="46" id="tw6-cv-Lyr"/>
+                                </constraints>
+                                <state key="normal" title="&lt;&lt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="cAP-In-8iQ" eventType="touchUpInside" id="NBS-gU-96J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j8V-Bc-5Ji" firstAttribute="top" secondItem="7YN-Oq-wbf" secondAttribute="top" constant="20" id="0yK-Jf-PFk"/>
+                            <constraint firstItem="j8V-Bc-5Ji" firstAttribute="leading" secondItem="cSH-do-yLJ" secondAttribute="leading" constant="20" id="9RS-2o-ot0"/>
+                            <constraint firstItem="G6J-kR-ef2" firstAttribute="centerY" secondItem="7YN-Oq-wbf" secondAttribute="centerY" id="AH6-z2-zdC"/>
+                            <constraint firstItem="G6J-kR-ef2" firstAttribute="centerX" secondItem="7YN-Oq-wbf" secondAttribute="centerX" id="L29-zV-8dT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cSH-do-yLJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="daysToBdayLabel" destination="EL5-z8-sLZ" id="zWh-tl-9ZC"/>
+                        <outlet property="jeBentLabel" destination="V6R-U2-u21" id="qYz-9L-c83"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrp-Qv-Fzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208.80000000000001" y="-72.413793103448285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="balloons" width="250" height="270"/>
+    </resources>
+</document>
